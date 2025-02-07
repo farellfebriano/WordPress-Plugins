@@ -10,13 +10,13 @@ creating meta data for the plgins
  * @package LalalandPlugin
  */
 /*
-Plugin Name: Lalaland Plugin
-Plugin URI: farellfebriano.com
-Description: this is a sample plugin
-Author: Farell Febriano
-Author URI: farellfebriano.com
-Version: 0.1
-License: GPLv2 or later
+ * Plugin Name: Lalaland Plugin
+ * Plugin URI: farellfebriano.com
+ * Description: this is a sample plugin
+ * Author: Farell Febriano
+ * Author URI: farellfebriano.com
+ * Version: 0.1
+ * License: GPLv2 or later
  */
  ```
 
@@ -43,9 +43,9 @@ if(!defined('ABSPATH')){
 
 // OR
 
-// if(!function_exists('add_action')){
-//     exit;
-// }
+if(!function_exists('add_action')){
+     exit;
+ }
  ```
 
 ## STEP 4
