@@ -9,6 +9,7 @@ creating meta data for the plgins
 /**
  * @package LalalandPlugin
  */
+
 /*
  * Plugin Name: Lalaland Plugin
  * Plugin URI: farellfebriano.com
