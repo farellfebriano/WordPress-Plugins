@@ -4,7 +4,7 @@
 
 we need to create class that will consist of our plugin functionality. This functionality will
 seperated into 3 part (activation, deactivation, uninstall)
-<br>/<br>
+<br></br>
 be mindfull, every stage of the code (activation, deactivation, uninstall), we need to ` flush_rewrite_rules();`
 like the example bellow
 
