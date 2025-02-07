@@ -3,7 +3,7 @@
 ## STEP 1
 creating meta data for the plgins
 
- '''php
+ ```php
  
 <?php
 /**
@@ -18,7 +18,7 @@ Author URI: farellfebriano.com
 Version: 0.1
 License: GPLv2 or later
  */
- '''
+ ```
 
 Creating a index.php (//Silence is golden)
 this is created for safety percution since the file is the first one that 
@@ -35,7 +35,7 @@ hence to make a file hidden it is best to create "index.php".
 ## STEP 3
 secure your plugins with this code. (choose either one)
 
-'''php
+```php
 ...
 if(!defined('ABSPATH')){
     die;
@@ -46,12 +46,12 @@ if(!defined('ABSPATH')){
 // if(!function_exists('add_action')){
 //     exit;
 // }
- '''
+ ```
 
 ## STEP 4
 3 default action to when you use your own plugins (Deactivation, Activation, Uninstall)
 
-'''php
+```php
 ...
 
 function activate()
@@ -68,12 +68,12 @@ function uninstall()
     {
       ...
     }
- '''
+ ```
 
  ## STEP 5
 register it function into its each actions
 
-'''php
+```php
 ...
 
 //activation
@@ -82,7 +82,7 @@ register_activation_hook(__FILE__,array($lalalandPlugin,'activate'));
 register_deactivation_hook(__FILE__,array($lalalandPlugin,'deactivation'));
 //uninstall
 register_uninstall_hook(__FILE__,array($lalalandPlugin,'uninstall'));
- '''
+ ```
 
 
 
