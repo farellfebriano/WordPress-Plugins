@@ -57,7 +57,8 @@ Instead us the <wordpress-plugins-name>.php file to code out uninstall code. Wor
 file as the file for us to code our uninstall steps. There will be 2 way to do this. The first ways is using `foreach`
 and the other one is deleting all the data straight from the wordpress db.
 
-## STEP 1
+## One Way
+### STEP 1
 
 always check is the `WP_UNINSTALL_PLUGIN` is initiate to make sure that only admin that can delete our plugins.
 
@@ -68,7 +69,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 }
 ```
 
-## STEP 2
+### STEP 2
 
 `$books` will get all the books that we create it and assign it into a variable called `$books`. Then, we will loops the it and delete it with `wp_delete_post`
 ```php
@@ -78,3 +79,5 @@ foreach( $books as $book ) {
 wp_delete_post( $book->ID, true );
 }
 ```
+
+
