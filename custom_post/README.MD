@@ -20,7 +20,6 @@ class LalalandPlugin
     }
     function activate()
     {
-        $this->add_custom_post_type();
         //generate a CPT
         $this->add_custom_post_type();// backup plan when init hooks is not working
         //flush rewrite rules
