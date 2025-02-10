@@ -71,9 +71,10 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 ## STEP 2
 
 `$books` will get all the books that we create it and assign it into a variable called `$books`. Then, we will loops the it and delete it with `wp_delete_post`
-
+```php
 $books = get_posts( array( 'post_type' => <the name of the posts>, 'numberposts' => -1 ) );
 
 foreach( $books as $book ) {
 wp_delete_post( $book->ID, true );
 }
+```
