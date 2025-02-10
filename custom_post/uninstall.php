@@ -23,7 +23,4 @@ foreach( $books as $book ) {
 }
 
 
-// Access database via sql
-// global $wpdb;
 
-// $wpdb->query("DELETE FROM wp_posts WHERE post_type ='book'");
