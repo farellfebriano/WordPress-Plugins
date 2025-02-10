@@ -59,11 +59,7 @@ class LalalandPlugin
 
     function add_custom_post_type()
     {
-        register_post_type('book',
-        [   'public'=>true,
-            'label'=>'book'
-        ]
-        );
+       register_post_type( 'book', ['public' => true, 'label' => 'Books'] );
     }
 }
 
