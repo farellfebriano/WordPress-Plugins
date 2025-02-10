@@ -18,6 +18,7 @@ class LalalandPlugin
         // initiate the custom post
         add_action('init', array($this, 'add_custom_post_type'));
     }
+
     function activate()
     {
         //generate a CPT
